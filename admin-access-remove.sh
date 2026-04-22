@@ -3,7 +3,7 @@
 echo "==== Admin Auto-Remediation Script Started ===="
 
 # ✅ Define approved admin users (EDIT THIS)
-APPROVED_ADMINS=("Admin")
+APPROVED_ADMINS=("Techolution" "intuneadmin" "techolution")
 
 # Get current admin users
 CURRENT_ADMINS=$(dscl . -read /Groups/admin GroupMembership | cut -d ":" -f2)
